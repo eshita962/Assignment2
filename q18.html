@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--18. Create an infinite animation of an element moving in a square pattern.-->
+<html>
+
+<head>
+    <title>
+        Animation
+    </title>
+    <style>
+        .cont {
+            background-color: rgb(9, 119, 236);
+            height: 800px;
+            width: 1400px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .cont>div {
+            background-color: rgb(82, 24, 243);
+            height: 300px;
+            width: 300px;
+            margin: 20px 20px 20px 20px;
+            font-size: 50px;
+            text-align: center;
+            animation-name: anime;
+            animation-iteration-count: infinite;
+            animation-duration: 3s;
+        }
+
+        @keyframes anime {
+            from {
+                transform: rotate(0deg);
+                background-color: rgb(42, 4, 52);
+            }
+
+            to {
+                transform: rotate(360deg);
+                background-color: rgb(6, 18, 179);
+                translate: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <div>Rock</div>
+        <div>n</div>
+        <div>Roll</div>
+        <!-- <div>Soniye XD</div> -->
+    </div>
+</body>
+
+</html>
